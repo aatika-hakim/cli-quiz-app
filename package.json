@@ -1,10 +1,10 @@
 {
   "name": "atika-quiz",
-  "version": "1.2.0",
+  "version": "1.4.0",
   "description": "",
   "main": "index.js",
   "type": "module",
-  "bin":{
+  "bin": {
     "atika-quiz": "bin/index.js"
   },
   "scripts": {
@@ -15,11 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "@types/inquirer": "^9.0.3",
-    "atika-quiz": "^1.0.0",
+    "@types/node": "^20.6.4",
     "chalk": "^5.3.0",
     "chalk-animation": "^2.0.3",
     "inquirer": "^9.2.11",
-    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
 }
