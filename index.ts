@@ -48,7 +48,7 @@ async function sleep(milliseconds: number) {
 
 async function main() {
     let rainbowStyle = chalkAnimation.rainbow("\n ------------------ Welcome To The Quiz App ------------------ \n");
-    await sleep(3000); // Wait for 3 seconds
+    await sleep(1000); // Wait for 3 seconds
     rainbowStyle.stop();
 
     let restart = true;
