@@ -2,6 +2,7 @@
 
 import inquirer from "inquirer";
 import chalk from "chalk";
+import chalkAnimation from "chalk-animation";
 
 interface Question {
     questionText: string;
@@ -41,7 +42,15 @@ function getQuizQuestions(): Question[] {
     return quiz;
 }
 
+async function sleep(milliseconds: number) {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+}
+
 async function main() {
+    let rainbowStyle = chalkAnimation.rainbow("\n ------------------ Welcome To The Quiz App ------------------ \n");
+    await sleep(3000); // Wait for 3 seconds
+    rainbowStyle.stop();
+
     let restart = true;
 
     while (restart) {
@@ -86,7 +95,8 @@ async function main() {
         }
     }
 
-    console.log('Thanks for attempting quiz.');
+    console.log('Thanks for attempting the quiz.');
 }
 
 main();
+
